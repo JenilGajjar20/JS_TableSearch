@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#ffc107, #7952b3);
+}
+
+main {
+  margin-top: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.container {
+  background-color: #7952b3;
+  color: #ffc107;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 25px;
+  border-bottom-left-radius: 35px;
+  font-size: 22px;
+}
+
+.container p a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.container p a:hover {
+  color: #ffc107;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 10px 50px;
+}
+
+th {
+  background-color: #7952b3;
+  color: #ffc107;
+}
+
+td {
+  background-color: #ffc107;
+}
+
+th,
+td {
+  padding: 10px 30px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  color: #7952b3;
+  text-shadow: 0 10px 20px rgba(121, 82, 179, 0.15),
+    0 10px 30px rgba(121, 82, 179, 0.25);
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  padding-left: 20px;
+  width: 70%;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #f4f4f4;
+  font-weight: 800;
+  background: transparent;
+  border-bottom: 2px solid #7952b3;
+}
+
+@media (max-width: 860px) {
+  table {
+    margin: 0 20px;
+  }
+  th,
+  td {
+    padding: 10px 20px;
+  }
+  .container {
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 710px) {
+  .container {
+    text-align: center;
+    left: 30%;
+    right: 30%;
+    border-bottom-right-radius: 35px;
+  }
+  .heading {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 620px) {
+  th,
+  td {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 590px) {
+    .heading{
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 445px) {
+  th,
+  td {
+    padding: 10px 5px;
+    font-size: 13px;
+  }
+  .container {
+    left: 25%;
+    right: 25%;
+    border-bottom-right-radius: 35px;
+  }
+}
